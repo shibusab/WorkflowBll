@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\DomainBase.cs" />
+    <Compile Include="Domain\IWorkflowDomain.cs" />
     <Compile Include="Domain\Rename.cs" />
     <Compile Include="Domain\VideoCapture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -55,6 +56,19 @@
     <Compile Include="Workflow\VideoCaptureStage.cs" />
     <Compile Include="Workflow\IWorkflowStage.cs" />
     <Compile Include="Workflow\RenameStage.cs" />
+    <Compile Include="ZFramework2\Domain\IAudioCaptureWorkflow.cs" />
+    <Compile Include="ZFramework2\Domain\IBaseWorkflow.cs" />
+    <Compile Include="ZFramework2\Domain\Impl\AudioCapture.cs" />
+    <Compile Include="ZFramework2\Domain\Impl\Rename.cs" />
+    <Compile Include="ZFramework2\Domain\Impl\VideoCapture.cs" />
+    <Compile Include="ZFramework2\Domain\IRenameWorkflow.cs" />
+    <Compile Include="ZFramework2\Domain\IVideoCaptureWorkflow.cs" />
+    <Compile Include="ZFramework2\Service\WorkflowService.cs" />
+    <Compile Include="ZFramework2\Tests\ZFramework2Test.cs" />
+    <Compile Include="ZFramework2\Workflow\Impl\AudioCaptureStage.cs" />
+    <Compile Include="ZFramework2\Workflow\Impl\RenameStage.cs" />
+    <Compile Include="ZFramework2\Workflow\Impl\VideoCaptureStage.cs" />
+    <Compile Include="ZFramework2\Workflow\IWorkflowStage.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
