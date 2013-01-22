@@ -45,10 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\DomainBase.cs" />
+    <Compile Include="Tests\FeatureTest.cs" />
+    <Compile Include="ZFeature\Domain\DomainBase.cs" />
+    <Compile Include="ZFeature\Domain\Episode.cs" />
+    <Compile Include="ZFeature\Domain\Feature.cs" />
+    <Compile Include="ZFeature\Domain\ItuneFeature.cs" />
+    <Compile Include="ZFeature\Domain\Movie.cs" />
     <Compile Include="Domain\IWorkflowDomain.cs" />
     <Compile Include="Domain\Rename.cs" />
     <Compile Include="Domain\VideoCapture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ZFeature\Repository\EpisodeRepository.cs" />
+    <Compile Include="ZFeature\Repository\FeatureRepository.cs" />
+    <Compile Include="ZFeature\Repository\MovieRepository.cs" />
+    <Compile Include="ZFeature\Service\FeatureService.cs" />
     <Compile Include="Service\WorkflowService.cs" />
     <Compile Include="Tests\WorkflowTest.cs" />
     <Compile Include="Domain\AudioCapture.cs" />
